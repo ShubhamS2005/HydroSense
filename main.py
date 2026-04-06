@@ -12,9 +12,9 @@ from oauth2client.service_account import ServiceAccountCredentials
 from twilio.rest import Client
 
 
-ACCOUNT_SID="ACf2d2eb9d56fcbf14ab27ded52e271ec0"
-AUTH_TOKEN="d35cc1e34ed9727c61da8fb966bc9a20"
-TWILIO_NUMBER="+19205161572"
+ACCOUNT_SID="ACc612ceff513688356d3f970b20dbe848"
+AUTH_TOKEN="fd592e476269312cf9c9829f016736d3"
+TWILIO_NUMBER="+16626771421"
 USER_NUMBER = "+919557235244"
 
 sms_client = Client(ACCOUNT_SID, AUTH_TOKEN)
@@ -160,15 +160,15 @@ while True:
     else:
         print(f"✅ {timestamp} | F1:{flow1} F2:{flow2} P:{pressure} → NORMAL")
     
-    # if risk == "HIGH":
-    #     alert_msg = f"""
-    #  LEAK DETECTED!
-    # Time: {timestamp}
-    # Flow1: {flow1}
-    # Flow2: {flow2}
-    # Pressure: {pressure}
-    # Reason: {reason}
-    # """
-    #     send_sms(alert_msg)
+    if risk == "HIGH":
+        alert_msg = f"""
+     LEAK DETECTED!
+    Time: {timestamp}
+    Flow1: {flow1}
+    Flow2: {flow2}
+    Pressure: {pressure}
+    Reason: {reason}
+    """
+        send_sms(alert_msg)
 
     time.sleep(3)
