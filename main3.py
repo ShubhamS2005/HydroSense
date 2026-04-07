@@ -78,7 +78,7 @@ except Exception as e:
 # Serial Setup
 # -----------------------------
 try:
-    ser = serial.Serial('COM4', 9600, timeout=1)
+    ser = serial.Serial('COM7', 9600, timeout=1)
     ser.dtr = False
     ser.rts = False
     ser.reset_input_buffer()
