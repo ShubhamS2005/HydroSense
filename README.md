@@ -157,7 +157,7 @@ This approach enables the system to evolve from rule-based detection to fully in
 ---
 
 ## 👨‍💻 Author
-Subham Srivastava ,Aman Kumar Ranjan ,Kush Bansal
+Roshni kumari , Shubham Srivastava ,Aman Kumar Ranjan ,Kush Bansal
 B.Tech Computer Science Engineering  
 
 ---
