@@ -85,10 +85,9 @@ Water-Leakage-Detection/
 │── python/  
 │   └── data_logger.py  
 │  
-│── web/  
-│   ├── index.html  
-│   ├── dashboard.js  
-│   └── styles.css  
+│── Website/  
+│   ├── Backend/ 
+│   ├── Frontend/
 │  
 │── app/  
 │   └── mobile_app_files/  
