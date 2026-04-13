@@ -78,27 +78,51 @@ Flow Sensors → ESP8266 → Serial Communication → Python Processing → CSV 
 
 ## 📂 Project Structure
 
-Water-Leakage-Detection/  
-│── arduino/  
-│   └── flow_sensor_code.ino  
-│  
-│── python/  
-│   └── data_logger.py  
-│  
-│── web/  
-│   ├── index.html  
-│   ├── dashboard.js  
-│   └── styles.css  
-│  
-│── app/  
-│   └── mobile_app_files/  
-│  
-│── data/  
-│   └── data.csv  
-│  
-│── credentials.json  
-│── README.md  
-
+```
+HydroSense/
+│
+├── App/
+│   └── hydrosensi/
+│       ├── lib/
+│       │   └── main.dart
+│       ├── assets/
+│       │   └── data/
+│       │       └── raw_data.csv
+│       └── pubspec.yaml
+│
+├── Website/
+│   ├── Frontend/
+│   │   ├── src/
+│   │   │   ├── components/
+│   │   │   ├── services/
+│   │   │   ├── App.jsx
+│   │   │   └── main.jsx
+│   │   ├── index.html
+│   │   └── package.json
+│   │
+│   └── Backend/
+│       ├── routes/
+│       ├── services/
+│       ├── server.js
+│       └── package.json
+│
+├── ML_Training/
+│   ├── ModelTraining.ipynb
+│   └── DataPreparation.ipynb
+│
+├── trained_models/
+│   ├── severity_model.pkl
+│   └── zone_model.pkl
+│
+├── Datasets/
+│   └── hydrosense_phase2_labeled.csv
+│
+├── Research/
+│   └── hydrosense_presentation.pdf
+│
+├── app.py
+└── README.md
+```
 ---
 
 ## 🔌 Python Module Responsibilities
